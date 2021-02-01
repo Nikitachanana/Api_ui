@@ -28,6 +28,27 @@ export default [
                   description:
                     "Unique transaction reference ID for a payment in the payer app system",
                 },
+                {
+                  name: "payment",
+                  required: true,
+                  type: "object",
+                  description:
+                    "Unique transaction reference ID for a payment in the payer app system",
+                },
+                {
+                  name: "destinationAccount",
+                  required: true,
+                  type: "object",
+                  description:
+                    "Unique transaction reference ID for a payment in the payer app system",
+                },
+                {
+                  name: "payment",
+                  required: true,
+                  type: "object",
+                  description:
+                    "Unique transaction reference ID for a payment in the payer app system",
+                },
               ],
             },
             success_response_schema: {},

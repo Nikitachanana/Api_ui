@@ -3,20 +3,18 @@ import Payload from "./Components/Payload/Payload";
 import Response from  "./Components/Response/Response"
 import data, {status,payload} from "./data"
 import Data from "./data"
+import Datatable from "./Components/Datatable/Datatable"
 
 const statusData = [];
 function App() {
-  function output(inp) {
-    document.body.appendChild(document.createElement('pre')).innerHTML = inp;
-}
-
-
-
+  
   return (
     <>
       <div className="App">
         <div></div>
-        <div></div>
+        <div>{data.map((item,i)=>{
+          return <Datatable data={item.request_body_schema.input_parameters}/>
+        })}</div>
         <div className="responses">
        {data.map(item=>{
          return  <div>
