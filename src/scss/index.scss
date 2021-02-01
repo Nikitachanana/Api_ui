@@ -1,0 +1,49 @@
+.App{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    .responses{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        background-color:rgb(244,247,250);
+    }
+}
+h6{
+    margin: 1rem 0 .5rem 0;
+}
+.red{
+    color: red;
+}
+.green{
+    color:green
+}
+
+.data-container{
+    padding: 1.5rem;
+    background-color: rgb(227,235,243);
+    width: 100%;
+    .nav-tabs{
+        flex-wrap: nowrap !important;
+        border-bottom: 1px solid grey;
+    }
+    
+    .nav-link{
+        padding: .3rem .7rem;
+        font-weight: bold;
+        font-size: .9rem;
+    }
+    .nav-link:hover{
+        border-bottom: 1px solid grey;
+    }
+    .active{
+        border-bottom: 1px solid grey !important;
+    }
+    .tab-content{
+        font-size: .9rem;
+        line-height: 1.3rem;
+    }
+}
+.__json-key__
+    {color :rgb(70, 12, 177)}
+

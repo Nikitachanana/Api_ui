@@ -1,0 +1,67 @@
+.App {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+}
+
+.App .responses {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 2rem;
+  background-color: #f4f7fa;
+}
+
+h6 {
+  margin: 1rem 0 .5rem 0;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.data-container {
+  padding: 1.5rem;
+  background-color: #e3ebf3;
+  width: 100%;
+}
+
+.data-container .nav-tabs {
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  border-bottom: 1px solid grey;
+}
+
+.data-container .nav-link {
+  padding: .3rem .7rem;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.data-container .nav-link:hover {
+  border-bottom: 1px solid grey;
+}
+
+.data-container .active {
+  border-bottom: 1px solid grey !important;
+}
+
+.data-container .tab-content {
+  font-size: .9rem;
+  line-height: 1.3rem;
+}
+
+.__json-key__ {
+  color: #460cb1;
+}
+/*# sourceMappingURL=index.css.map */

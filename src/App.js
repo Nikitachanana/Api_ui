@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./scss/index.css";
+import Payload from "./Components/Payload/Payload";
+import Response from  "./Components/Response/Response"
+import data, {status,payload} from "./data"
+import Data from "./data"
 
+const statusData = [];
 function App() {
+  function output(inp) {
+    document.body.appendChild(document.createElement('pre')).innerHTML = inp;
+}
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div></div>
+        <div></div>
+        <div className="responses">
+       {data.map(item=>{
+         return  <div>
+          <Payload data={item.request_sample} />
+          <Response data={item.responses}/>
+        </div>
+       })}
+       </div>
+      </div>
+    </>
   );
 }
 
